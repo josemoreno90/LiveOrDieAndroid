@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.util.Log;
 
 import me.josefmoreno.liveordie.R;
+import me.josefmoreno.liveordie.model.Page;
 
 public class StoryActivity extends AppCompatActivity {
 
     public static final String TAG = StoryActivity.class.getSimpleName();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,5 +24,7 @@ public class StoryActivity extends AppCompatActivity {
             name = "Friend";
         }
         Log.d(TAG, name);
+
+
     }
 }
