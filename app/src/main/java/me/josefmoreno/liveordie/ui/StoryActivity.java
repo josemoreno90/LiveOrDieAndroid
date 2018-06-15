@@ -61,7 +61,7 @@ public class StoryActivity extends AppCompatActivity {
       storyTextView.setText(pageText);
 
       if (page.isFinalPage()) {
-        choice1Button.setVisibility(View.);
+        choice1Button.setVisibility(View.INVISIBLE);
         choice2Button.setText(R.string.play_again_button_text);
       }
       else {
