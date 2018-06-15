@@ -24,12 +24,13 @@
     <string name="page4_choice2">You leave your knowledge there and run back under your bed.</string>
 
     <string name="page5">You continue to search and find new truths all thanks to your pursue of it.  You look back to time in the darkness and your ignorance to reality.  You feel a new knowledge entering your being, new thoughts flood your mind and the light begins to open your understanding to a new reality which leaves your new found light, looking like a dimming candle...</string>
-    <string name="page5_choice1"></string>
-    <string name="page5_choice2"></string>
+    <string name="page5_choice1">Cool Story</string>
+    <string name="page5_choice2">Cool Story</string>
 
     <string name="page6">You find more pleasures than you could ever need.  You begin to enduldge for many years of your life until your age slows your ability to enjoy many of them, you start to regret finding the pleasures and wished it could have been something more real, something which brought truth and realization instead of something which ultimately brought nothing.</string>
-    <string name="page6_choice1"></string>
-    <string name="page6_choice2"></string>
+    <string name="page6_choice1">Boring Story</string>
+    <string name="page6_choice2">Boring Story</string>
     <string name="story_page_image">Story page image</string>
+    <string name="play_again_button_text">Play Again</string>
 
 </resources>

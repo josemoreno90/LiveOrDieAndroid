@@ -60,23 +60,32 @@ public class StoryActivity extends AppCompatActivity {
       pageText = String.format(pageText, name);
       storyTextView.setText(pageText);
 
-      choice1Button.setText(page.getChoice1().getTextId());
-      choice1Button.setOnClickListener(new View.OnClickListener() {
-          @Override
-          public void onClick(View view) {
-              int nextPage = page.getChoice1().getNextPage();
-              loadPage(nextPage);
-          }
-      });
+      if (page.isFinalPage()) {
+        choice1Button.setVisibility(View.);
+        choice2Button.setText(R.string.play_again_button_text);
+      }
+      else {
+          loadButtons(page);
+      }
+    }
 
-      choice2Button.setText(page.getChoice2().getTextId());
-      choice2Button.setOnClickListener(new View.OnClickListener() {
+    private void loadButtons(final Page page) {
+        choice1Button.setText(page.getChoice1().getTextId());
+        choice1Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int nextPage = page.getChoice1().getNextPage();
+                loadPage(nextPage);
+            }
+        });
+
+        choice2Button.setText(page.getChoice2().getTextId());
+        choice2Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int nextPage = page.getChoice2().getNextPage();
                 loadPage(nextPage);
             }
         });
-
     }
 }
